@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "img": "https://i.ibb.co/DWhKsdt/alex-haney-o4x4sie-Rz-I4-unsplash.jpg",
+      "title": "Epic eSports Championship",
+      "price": 29.99,
+      "description": "Join the most prestigious eSports championship of the year. Compete against the best gamers globally and win incredible prizes, with the chance to claim up to $20,000,000 in prize money!",
+      "service": "League of Legends",
+      "winingPrice":1000000 
+    },
+    {
+      "id": 2,
+      "img": "https://i.ibb.co/XZp7kfQ/xr-expo-s-Td-ZIYi-Wwu-A-unsplash.jpg",
+      "title": "Virtual Reality VRcade",
+      "price": "$15.00",
+      "description": "Experience the future of gaming in our VRcade event. Dive into immersive virtual worlds and challenge your friends in breathtaking VR games. Plus, you can win a share of the $20,000,000 prize money!",
+      "service": "Beat Saber",
+      "winingPrice":250000 
+    },
+    {
+      "id": 3,
+      "img": "https://i.ibb.co/7Jxn2JW/florian-olivo-Mf23-RF8x-Ar-Y-unsplash.jpg",
+      "title": "Cosplay & Gaming Expo",
+      "price": "Free",
+      "description": "Unleash your inner geek at our Cosplay & Gaming Expo. Dress up as your favorite characters, attend panels, and game with fellow enthusiasts. Get ready for fun and a chance to win up to $20,000,000 in prizes!",
+      "service": "Various Games",
+      "winingPrice":2000 
+    },
+    {
+      "id": 4,
+      "img": "https://i.ibb.co/QHYZh0x/andre-hunter-ugj-Pgy2-BQug-unsplash.jpg",
+      "title": "Retro Game Night",
+      "price": "$10.00",
+      "description": "Relive the nostalgia of classic gaming at Retro Game Night. Play vintage video games and compete in a retro gaming tournament. With up to $20,000,000 in prize money, it's a blast from the past you can't miss!",
+      "service": "Classic Arcade Games",
+      "winingPrice":20000 
+    },
+    {
+      "id": 5,
+      "img": "https://i.ibb.co/rkHhvtP/jeshoots-com-e-Cktz-Gj-C-i-U-unsplash.jpg",
+      "title": "Gaming LAN Party",
+      "price": "$25.00",
+      "description": "Join our Gaming LAN Party for a night of non-stop multiplayer action. Bring your rig or console and frag your way to victory. Plus, there's up to $20,000,000 in prize money waiting for you!",
+      "service": "LAN Multiplayer Games",
+      "winingPrice":50000 
+    },
+    {
+      "id": 6,
+      "img": "https://i.ibb.co/HgHVHKS/carl-raw-m3hn2-Kn5-Bns-unsplash.jpg",
+      "title": "Indie Game Showcase",
+      "price": "Free",
+      "description": "Discover the future of gaming at our Indie Game Showcase. Play unreleased indie games and meet the developers behind them. Support the indie gaming community and have a chance to win a share of the $20,000,000 prize money!",
+      "service": "Indie Game Collection",
+      "winingPrice":1000 
+    }
+  ]
+  

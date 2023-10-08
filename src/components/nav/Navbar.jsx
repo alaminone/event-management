@@ -1,10 +1,11 @@
-import { NavLink } from "react-router-dom";
-
+import { Link, NavLink } from "react-router-dom";
+import { GiGamepadCross } from 'react-icons/gi';
 
 const Navbar = () => {
 
     const navlink = <>
     <li><NavLink to={"/"}>Home</NavLink></li>
+    <li><NavLink to={"/srvice"}>Srvice</NavLink></li>
     </>
 
     return (
@@ -18,7 +19,8 @@ const Navbar = () => {
             {navlink}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+        <GiGamepadCross className="text-3xl text-blue-700"></GiGamepadCross>
+          <a className="btn btn-ghost normal-case text-2xl font-bold">GamE <span className="text-blue-700">ZooN</span></a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -26,7 +28,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <button className="btn btn-outline btn-primary">LogIn</button>
+        <Link to={"/login"}>  <button className="btn btn-outline btn-primary">LogIn</button></Link>
         </div>
       </div>
     );
