@@ -28,12 +28,12 @@ const Register = () => {
         
   }
     return (
-      <div className="max-w-6xl mx-auto">
+      <div>
         <Navbar></Navbar>
-          <div className=" my-14 flex justify-center items-center">
+          <div className="max-w-6xl mx-auto mt-14 flex justify-center items-center">
             <div className=" w-3/6">
   <h4 className="block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-    Sign Up
+  Register Hear
   </h4>
   <p className="mt-1 block font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
     Enter your details to register.
@@ -110,7 +110,7 @@ const Register = () => {
 </div>
               {/*  */}
               <div className="form-control mt-6">
-                <button className="btn mt-6 block w-full select-none rounded-lg bg-blue-700 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">Login</button>
+                <button className="btn mt-6 block w-full select-none rounded-lg bg-blue-700 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">Register</button>
               </div>
         </form>
   <p className="mt-4 block text-center font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
