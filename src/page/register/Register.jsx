@@ -1,7 +1,12 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContex } from "../../components/provider/AuthProvider";
+import Navbar from "../../components/nav/Navbar";
 
 
 const Register = () => {
+
+  const {creatUser}= useContext(AuthContex)
 
   const handelRegister = e =>{
     e.preventDefault();
@@ -13,10 +18,19 @@ const Register = () => {
         const password = form.get("password")
       
         console.log(email,password,name);
-
+        creatUser(email,password)
+        .then(result=>{
+          console.log(result.user)
+        })
+        .catch(error =>{
+          console.error(error)
+        })
+        
   }
     return (
-        <div className="max-w-6xl mx-auto mt-14 flex justify-center items-center">
+      <div className="max-w-6xl mx-auto">
+        <Navbar></Navbar>
+          <div className=" my-14 flex justify-center items-center">
             <div className=" w-3/6">
   <h4 className="block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
     Sign Up
@@ -58,6 +72,7 @@ const Register = () => {
   >
     <input
       type="checkbox"
+      required
       className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-pink-500 checked:bg-pink-500 checked:before:bg-pink-500 hover:before:opacity-10"
       id="checkbox"
     />
@@ -109,6 +124,7 @@ const Register = () => {
     </p>
 </div>
         </div>
+      </div>
     );
 };
 

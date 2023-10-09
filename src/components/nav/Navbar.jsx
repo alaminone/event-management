@@ -1,7 +1,18 @@
 import { Link, NavLink } from "react-router-dom";
-import { GiGamepadCross } from 'react-icons/gi';
+import { GiGamepadCross} from 'react-icons/gi';
+import { FaUser} from 'react-icons/fa';
+import { useContext } from "react";
+import { AuthContex } from "../provider/AuthProvider";
 
 const Navbar = () => {
+
+  const {user,logout} = useContext(AuthContex);
+
+  const handellogout = () =>{
+    logout()
+    .then()
+    .catch()
+  }
 
     const navlink = <>
     <li><NavLink to={"/"}>Home</NavLink></li>
@@ -29,7 +40,13 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-        <Link to={"/login"}>  <button className="btn btn-outline btn-primary">LogIn</button></Link>
+
+          {
+            user ?  <button onClick={handellogout} className="btn btn-outline btn-primary">Log Out <FaUser></FaUser></button>
+            :
+            <Link to={"/login"}>  <button className="btn btn-outline btn-primary">LogIn</button></Link>
+          }
+      
         </div>
       </div>
     );

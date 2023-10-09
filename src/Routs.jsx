@@ -6,6 +6,7 @@ import Login from "./page/login/Login";
 import Register from "./page/register/Register";
 import NewEvent from "./page/newevent/NewEvent";
 import ErrorPage from "./components/error/ErrorPage";
+import PrivetRout from "./page/login/PrivetRout";
 
 
 const Router = createBrowserRouter([
@@ -21,12 +22,12 @@ const Router = createBrowserRouter([
             },
             {
                 path:"/newevent/:id",
-                element:<NewEvent></NewEvent>,
+                element:<PrivetRout><NewEvent></NewEvent></PrivetRout>,
                 loader:()=>fetch("/data.json")
             },
             {
                 path:"/srvice",
-                element:<Srvice></Srvice>,
+                element:<PrivetRout><Srvice></Srvice></PrivetRout>,
                 loader:()=>fetch("/data.json")
                 
             },

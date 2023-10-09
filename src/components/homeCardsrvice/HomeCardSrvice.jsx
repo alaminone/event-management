@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 
+import { Link } from "react-router-dom";
+
 
 // eslint-disable-next-line react/prop-types
 const HomeCardSrvice = ({data}) => {
@@ -7,7 +9,7 @@ const HomeCardSrvice = ({data}) => {
     return (
         <div className="card  bg-base-100 shadow-xl">
         
-        <div className="card-body">
+       <Link to={"/srvice"}> <div className="card-body">
           <h2 className="card-title text-xl">
             {service}
             <div className="badge badge-secondary">NEW</div>
@@ -18,7 +20,7 @@ const HomeCardSrvice = ({data}) => {
             Winning Price {winingPrice}$
          </div>
           </div>
-        </div>
+        </div></Link>
       </div>
     );
 };
