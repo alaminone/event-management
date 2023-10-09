@@ -8,7 +8,7 @@ const NewEvent = () => {
     const intId = parseInt(id);
 
     const showDetails = alldeteils.find(event => event.id === intId);
-    const { img,title,description } = showDetails;
+    const { img,title,description,price,winingPrice } = showDetails;
 
     return (
         <div className="max-w-6xl mx-auto">
@@ -30,6 +30,8 @@ const NewEvent = () => {
     <p className="mb-8 block font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
      {description}
     </p>
+    <h3 className="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">Price:{price}</h3>
+    <h3 className="mb-2 block font-sans text-2xl text-blue-700 font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">wining Price:{winingPrice}</h3>
     
   </div>
 </div>

@@ -5,27 +5,29 @@ import Srvice from "./page/srvice/Srvice";
 import Login from "./page/login/Login";
 import Register from "./page/register/Register";
 import NewEvent from "./page/newevent/NewEvent";
+import ErrorPage from "./components/error/ErrorPage";
 
 
 const Router = createBrowserRouter([
     {
         path:"/",
         element:<Root></Root>,
+        errorElement:<ErrorPage></ErrorPage>,
         children:[
             {
                 path:"/",
                 element:<Home></Home>,
-                loader:()=>fetch("data.json")
+                loader:()=>fetch("/data.json")
             },
             {
                 path:"/newevent/:id",
                 element:<NewEvent></NewEvent>,
-                loader:()=>fetch("data.json")
+                loader:()=>fetch("/data.json")
             },
             {
                 path:"/srvice",
                 element:<Srvice></Srvice>,
-                loader:()=>fetch("data.json")
+                loader:()=>fetch("/data.json")
                 
             },
             {
